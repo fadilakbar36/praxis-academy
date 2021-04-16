@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<h2>Calculator suhu Celcius ke Reamur</h2>
+<input id="input" type="number" placeholder="input nilai suhu"/>
+<button onclick="displayOK()">Convert </button>
+<div id= "ok"></div>
+
+<script>
+    let input = document.querySelector('#input');
+    let ok = document.querySelector('#ok');
+    function displayOK(){
+        let result = input.value * (4/5);
+        ok.innerHTML = result + " <span> &deg</span>R";
+    }
+    console.log(ok);
+</script>
+</body>
+</html>
+
