@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Plat Kendaraan</title>
+    
+</head>
+<body>
+    
+</body>
+<Script>
+    let plat = prompt ("cek plat kendaraan anda")
+    let regexPlat = /^[A-Z]{1,2}\s\d{4,4}\s[A-Z]{1,3}$/
+
+    if (regexPlat.test (plat)) {
+        alert("Plat benar, milik indonesia :)");
+    }else {
+        alert("Plat salah, milik polisi ;)");
+    }
+</Script>
+</html>
